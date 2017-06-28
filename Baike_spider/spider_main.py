@@ -3,8 +3,8 @@ Created on 2017年6月28日
 
 @author: wyq
 '''
-from Baike_spider import url_manager, html_downloader, html_outputer
-from Baike_spider import html_parser
+from Baike_spider import  url_manager, html_downloader, html_outputer
+from Baike_spider import  html_parser
 
 
 class SpiderMain(object):
@@ -30,7 +30,7 @@ class SpiderMain(object):
                 self.outputer.collect_data(new_data)
 
 
-                if count == 1000:
+                if count == 10:
                     break
                 count = count + 1
             except Exception as e:
