@@ -34,7 +34,6 @@ class SpiderMain(object):
                     break
                 count = count + 1
             except Exception as e:
-#                 count = count + 1
                 print('craw failed',e)
 
         self.outputer.output_html()                 #输出网页文件
